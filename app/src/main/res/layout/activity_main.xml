@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Department Input -->
+    <EditText
+        android:id="@+id/departmentField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Department"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Batch Input -->
+    <EditText
+        android:id="@+id/batchField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Batch"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/departmentField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Section Input -->
+    <EditText
+        android:id="@+id/sectionField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Section"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/batchField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/sectionField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ID Input -->
+    <EditText
+        android:id="@+id/idField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Student ID"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/idField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Validate Button -->
+    <Button
+        android:id="@+id/validateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validate"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/validateButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
